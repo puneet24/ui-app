@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Enroll App</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="darkblue">Personal Information</h1>
+        <p>First, we need to verify whether you're new to DC Health Link or affiliated with another account. Please enter your personal information. When you're finished, select CONTINUE.</p>
+        <p class="memo">* = required field</p>
+              
+        <div id="personal_info" class="focus_effect module">
+          <input type="hidden" name="people[id]" id="people_id">
+          <input type="hidden" name="person[dob_check]" id="person_dob_check">
+        
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_first_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">FIRST NAME *</label><input class="required floatlabel form-control interaction-field-control-person-first-name" required="required" placeholder="FIRST NAME *" type="text" name="person[first_name]" id="person_first_name" style="padding-top: 22px; transition: all 0.1s ease-in-out;"></div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_middle_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">MIDDLE NAME</label><input class="floatlabel form-control interaction-field-control-person-middle-name" placeholder="MIDDLE NAME" type="text" name="person[middle_name]" id="person_middle_name" style="padding-top: 22px; transition: all 0.1s ease-in-out;"></div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_last_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">LAST NAME *</label><input class="required floatlabel form-control interaction-field-control-person-last-name" required="required" placeholder="LAST NAME *" type="text" name="person[last_name]" id="person_last_name" style="padding-top: 22px; transition: all 0.1s ease-in-out;"></div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
+              <div class="selectric-labeled">
+                <span><strong>Suffix</strong></span>
+                <div class="selectric-wrapper selectric-interaction-choice-control-person-name-sfx">
+                  <div class="selectric-hide-select">
+                    <select name="person[name_sfx]" id="person_name_sfx" class="interaction-choice-control-person-name-sfx" tabindex="-1"><option value="" class="interaction-choice-control-person-name-sfx-0">NONE</option>
+                      <option value="Jr." class="interaction-choice-control-person-name-sfx-1">Jr.</option>
+                      <option value="Sr." class="interaction-choice-control-person-name-sfx-2">Sr.</option>
+                      <option value="II" class="interaction-choice-control-person-name-sfx-3">II</option>
+                      <option value="III" class="interaction-choice-control-person-name-sfx-4">III</option>
+                      <option value="IV" class="interaction-choice-control-person-name-sfx-5">IV</option>
+                      <option value="V" class="interaction-choice-control-person-name-sfx-6">V</option>
+                    </select>
+                  </div>
+              </div>    
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-form-wrapper no-buffer">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd top-buffer">
+          <div class="floatlabel-wrapper" style="position:relative">
+            <span class="span-text">Are you applying for your coverage yourslef</span>
+          </div>
+          </div>
+          <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 form-group form-group-lg no-pd border_bottom_zero">
+              <div class="radio">
+                <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_male" required="required" type="radio" value="male" name="person[gender]">
+                <label for="radio_male"><span>MALE</span></label>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 form-group form-group-lg no-pd">
+              <div class="radio">
+                <input class="required floatlabel interaction-choice-control-value-radio-female" id="radio_female" required="required" type="radio" value="female" name="person[gender]">
+                <label class="female" for="radio_female"><span>FEMALE</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_dob_jq_datepicker_plain_field" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">DATE OF BIRTH *</label><input placeholder="DATE OF BIRTH *" data-date-min="-110y" data-date-max="+0" required="required" class="" id="person_dob_jq_datepicker_plain_field" type="text" name="person[dob]" style="padding-top: 22px; display: none; transition: all 0.1s ease-in-out;"></div><div class="floatlabel-wrapper" style="position:relative"><label for="jq_datepicker_ignore_person_dob" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">DATE OF BIRTH *</label><input type="text" name="jq_datepicker_ignore_person[dob]" id="jq_datepicker_ignore_person_dob" value="" placeholder="DATE OF BIRTH *" data-date-min="-110y" data-date-max="+0" required="required" class="floatlabel form-control jq-datepicker interaction-field-control-jq-datepicker-ignore-person-dob hasDatepicker jq_datepicker_already_applied" start_date="07/01/2016" style="padding-top: 22px; transition: all 0.1s ease-in-out;" data-submission-field="#person_dob_jq_datepicker_plain_field" autocomplete="off"></div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-7 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_ssn" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">SOCIAL SECURITY</label><input placeholder="SOCIAL SECURITY" class="required floatlabel form-control interaction-field-control-person-ssn" type="text" name="person[ssn]" id="person_ssn" autocomplete="off" style="padding-top: 22px; transition: all 0.1s ease-in-out;"></div>
+            </div>
+        
+            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-5 form-group form-group-lg no-pd top-buffer">
+              <input name="person[no_ssn]" type="hidden" value="0"><input type="checkbox" value="1" name="person[no_ssn]" id="person_no_ssn" class="interaction-choice-control-value-person-no-ssn">
+              <label for="person_no_ssn_true">
+                <span class="no_ssn">&nbsp;I don't have an SSN</span>
+        </label>      <span><i class="fa fa-question-circle" data-toggle="tooltip" title="" data-original-title="You should only check this box if the person doesn’t have a Social Security Number. We use this information to assist with identity verification."></i></span>
+            </div>
+        
+            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 form-group form-group-lg no-pd border_bottom_zero">
+              <div class="radio">
+                <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_male" required="required" type="radio" value="male" name="person[gender]">
+                <label for="radio_male"><span>MALE</span></label>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 form-group form-group-lg no-pd">
+              <div class="radio">
+                <input class="required floatlabel interaction-choice-control-value-radio-female" id="radio_female" required="required" type="radio" value="female" name="person[gender]">
+                <label class="female" for="radio_female"><span>FEMALE</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+              
+              
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.field_with_errors > *').unwrap();
+          Freebies.floatlabels();
+        });
+      </script>
+      
+      
+      <script>
+        $(document).on('ready page:load', function () {
+          Freebies.allFreebies();
+        });
+      </script>
+      <br>
+      <div id="person_search_results"></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
