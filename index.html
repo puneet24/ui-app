@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,13 +33,13 @@
         
           <div class="row row-form-wrapper no-buffer">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
-              <div class="floatlabel-wrapper" style="position:relative"><label for="person_first_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">FIRST NAME *</label><input class="required floatlabel form-control interaction-field-control-person-first-name" required="required" placeholder="FIRST NAME *" type="text" name="person[first_name]" id="person_first_name" style="padding-top: 22px; transition: all 0.1s ease-in-out;"></div>
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_first_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">FIRST NAME *</label><input class="required floatlabel form-control interaction-field-control-person-first-name" required="required" placeholder="FIRST NAME *" type="text" name="person[first_name]" id="person_first_name" style="transition: all 0.1s ease-in-out;"></div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
-              <div class="floatlabel-wrapper" style="position:relative"><label for="person_middle_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">MIDDLE NAME</label><input class="floatlabel form-control interaction-field-control-person-middle-name" placeholder="MIDDLE NAME" type="text" name="person[middle_name]" id="person_middle_name" style="padding-top: 22px; transition: all 0.1s ease-in-out;"></div>
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_middle_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">MIDDLE NAME</label><input class="floatlabel form-control interaction-field-control-person-middle-name" placeholder="MIDDLE NAME" type="text" name="person[middle_name]" id="person_middle_name" style="transition: all 0.1s ease-in-out;"></div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
-              <div class="floatlabel-wrapper" style="position:relative"><label for="person_last_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">LAST NAME *</label><input class="required floatlabel form-control interaction-field-control-person-last-name" required="required" placeholder="LAST NAME *" type="text" name="person[last_name]" id="person_last_name" style="padding-top: 22px; transition: all 0.1s ease-in-out;"></div>
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_last_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">LAST NAME *</label><input class="required floatlabel form-control interaction-field-control-person-last-name" required="required" placeholder="LAST NAME *" type="text" name="person[last_name]" id="person_last_name" style="transition: all 0.1s ease-in-out;"></div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
               <div class="selectric-labeled">
@@ -60,21 +61,21 @@
         </div>
 
         <div class="row row-form-wrapper no-buffer">
-          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd top-buffer">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group form-group-lg no-pd" style="margin-top: 10px">
           <div class="floatlabel-wrapper" style="position:relative">
-            <span class="span-text">Are you applying for your coverage yourslef</span>
+            <span class="span-text">Are you applying for coverage for yourslef? *</span>
           </div>
           </div>
-          <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 form-group form-group-lg no-pd border_bottom_zero">
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 form-group form-group-lg no-pd border_bottom_zero">
               <div class="radio">
                 <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_male" required="required" type="radio" value="male" name="person[gender]">
-                <label for="radio_male"><span>MALE</span></label>
+                <label class="radio-label" for="radio_male"><span>Yes</span></label>
               </div>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 form-group form-group-lg no-pd">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 form-group form-group-lg no-pd">
               <div class="radio">
                 <input class="required floatlabel interaction-choice-control-value-radio-female" id="radio_female" required="required" type="radio" value="female" name="person[gender]">
-                <label class="female" for="radio_female"><span>FEMALE</span></label>
+                <label class="radio-label" for="radio_female"><span>No</span></label>
               </div>
             </div>
           </div>
@@ -82,29 +83,29 @@
         
           <div class="row row-form-wrapper no-buffer">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd">
-              <div class="floatlabel-wrapper" style="position:relative"><label for="person_dob_jq_datepicker_plain_field" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">DATE OF BIRTH *</label><input placeholder="DATE OF BIRTH *" data-date-min="-110y" data-date-max="+0" required="required" class="" id="person_dob_jq_datepicker_plain_field" type="text" name="person[dob]" style="padding-top: 22px; display: none; transition: all 0.1s ease-in-out;"></div><div class="floatlabel-wrapper" style="position:relative"><label for="jq_datepicker_ignore_person_dob" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">DATE OF BIRTH *</label><input type="text" name="jq_datepicker_ignore_person[dob]" id="jq_datepicker_ignore_person_dob" value="" placeholder="DATE OF BIRTH *" data-date-min="-110y" data-date-max="+0" required="required" class="floatlabel form-control jq-datepicker interaction-field-control-jq-datepicker-ignore-person-dob hasDatepicker jq_datepicker_already_applied" start_date="07/01/2016" style="padding-top: 22px; transition: all 0.1s ease-in-out;" data-submission-field="#person_dob_jq_datepicker_plain_field" autocomplete="off"></div>
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_dob_jq_datepicker_plain_field" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">DATE OF BIRTH *</label><input placeholder="DATE OF BIRTH *" data-date-min="-110y" data-date-max="+0" required="required" class="" id="person_dob_jq_datepicker_plain_field" type="text" name="person[dob]" style=" display: none; transition: all 0.1s ease-in-out;"></div><div class="floatlabel-wrapper" style="position:relative"><label for="jq_datepicker_ignore_person_dob" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">DATE OF BIRTH *</label><input type="text" name="jq_datepicker_ignore_person[dob]" id="jq_datepicker_ignore_person_dob" value="" placeholder="DATE OF BIRTH *" data-date-min="-110y" data-date-max="+0" required="required" class="floatlabel form-control jq-datepicker interaction-field-control-jq-datepicker-ignore-person-dob hasDatepicker jq_datepicker_already_applied" start_date="07/01/2016" style="transition: all 0.1s ease-in-out;" data-submission-field="#person_dob_jq_datepicker_plain_field" autocomplete="off"></div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-7 form-group form-group-lg no-pd">
-              <div class="floatlabel-wrapper" style="position:relative"><label for="person_ssn" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">SOCIAL SECURITY</label><input placeholder="SOCIAL SECURITY" class="required floatlabel form-control interaction-field-control-person-ssn" type="text" name="person[ssn]" id="person_ssn" autocomplete="off" style="padding-top: 22px; transition: all 0.1s ease-in-out;"></div>
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_ssn" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">SOCIAL SECURITY</label><input placeholder="SOCIAL SECURITY" class="required floatlabel form-control interaction-field-control-person-ssn" type="text" name="person[ssn]" id="person_ssn" autocomplete="off" style="transition: all 0.1s ease-in-out;"></div>
             </div>
         
-            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-5 form-group form-group-lg no-pd top-buffer">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 form-group form-group-lg no-pd top-buffer">
               <input name="person[no_ssn]" type="hidden" value="0"><input type="checkbox" value="1" name="person[no_ssn]" id="person_no_ssn" class="interaction-choice-control-value-person-no-ssn">
               <label for="person_no_ssn_true">
-                <span class="no_ssn">&nbsp;I don't have an SSN</span>
+                <span class="checkbox-label">&nbsp;I don't have an SSN</span>
         </label>      <span><i class="fa fa-question-circle" data-toggle="tooltip" title="" data-original-title="You should only check this box if the person doesn’t have a Social Security Number. We use this information to assist with identity verification."></i></span>
             </div>
         
-            <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2 form-group form-group-lg no-pd border_bottom_zero">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 form-group form-group-lg no-pd border_bottom_zero top-small-buffer">
               <div class="radio">
                 <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_male" required="required" type="radio" value="male" name="person[gender]">
-                <label for="radio_male"><span>MALE</span></label>
+                <label class="radio-label" for="radio_male"><span>MALE</span></label>
               </div>
             </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 form-group form-group-lg no-pd">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 form-group form-group-lg no-pd top-small-buffer">
               <div class="radio">
                 <input class="required floatlabel interaction-choice-control-value-radio-female" id="radio_female" required="required" type="radio" value="female" name="person[gender]">
-                <label class="female" for="radio_female"><span>FEMALE</span></label>
+                <label class="radio-label" for="radio_female"><span>FEMALE</span></label>
               </div>
             </div>
           </div>

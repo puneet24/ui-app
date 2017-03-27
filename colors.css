@@ -1,0 +1,76 @@
+/*Patterns Color Page*/
+
+/*Background Color*/
+.color-background {
+    background-color: #f2f2f2;
+}
+
+/*Text Colors*/
+.color-text-default {
+    background-color: #000000;
+}
+
+.color-text-darkblue {
+    background-color: #003260;
+}
+
+.color-text-lightblue {
+    background-color: #007BC4;
+}
+
+.color-text-anotherlightgray {
+    background-color: #C3C3C3;
+}
+
+.color-text-lightgray {
+    background-color: #909090;
+}
+
+.color-text-gray {
+    background-color: #7B7B7B;
+}
+
+.color-text-darkgray {
+    background-color: #414141;
+}
+
+.color-text-white {
+    background-color: #FFFFFF;
+}
+
+.color-text-red {
+    background-color: #E72B2D;
+}
+
+/* Element Colors*/
+.color-element-lightblue {
+    background-color: #007BC4;
+}
+
+.color-element-red {
+    background-color: #E72B2D;
+}
+
+.color-element-anotherblue {
+    background-color: #044972;
+}
+
+.color-element-darkblue {
+    background-color: #003260;
+}
+
+.color-element-gray {
+    background-color: #B7B7B7;
+}
+
+.color-element-lightgray {
+    background-color: #D5D5D5;    
+}
+
+.color-element-green {
+    background-color: #69A30D;    
+}
+
+.color-element-yellow {
+    background-color: #EAAA00;
+}

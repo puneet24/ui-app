@@ -129,6 +129,7 @@ input,
 input::-webkit-input-placeholder {
     font-size: 12px;
     line-height: 3;
+    color: #C3C3C3;
 }
 
 .module .selectric-labeled span, .modal .selectric-labeled span {
@@ -168,7 +169,7 @@ input::-webkit-input-placeholder {
 .module .selectric-labeled .selectric-wrapper, .modal .selectric-labeled .selectric-wrapper {
     width: 100%;
     max-width: 75%;
-    display: inline-block;
+        display: -webkit-inline-box;
 }
 
 .module .selectric-labeled > *, .modal .selectric-labeled > * {
@@ -184,8 +185,9 @@ input::-webkit-input-placeholder {
     cursor: pointer;
 }
 
-.span-text {
-    padding-left: 10px !important;
-    color: #838780 !important;
+.radio-label {
+    padding-left: 0px !important;
+    color: #414141 !important;
     font-size: 14px !important;
+    opacity: 0.5;
 }

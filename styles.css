@@ -1,0 +1,35 @@
+textarea:focus, input:focus {
+    color: #044972;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 3;
+    color: #C3C3C3;
+}
+
+.span-text {
+    padding-left: 10px !important;
+    color: #414141 !important;
+    font-size: 13px !important;
+    opacity: 0.5;
+}
+
+.checkbox-label {
+	padding-left: 0px;
+	color: #414141 !important;
+    font-size: 13px !important;
+    opacity: 0.5;
+}
+
+.top-small-buffer {
+	margin-top: 5px;
+}
+
+.memo {
+	margin: 0px;
+	color: #414141 !important;
+    font-size: 13px !important;
+    opacity: 0.5;
+    text-align: end;
+}
