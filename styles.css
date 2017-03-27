@@ -33,3 +33,7 @@ input::-webkit-input-placeholder {
     opacity: 0.5;
     text-align: end;
 }
+
+.left-buffer {
+	margin-left: 10px !important;
+}

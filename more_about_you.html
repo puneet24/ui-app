@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Enroll App</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .span-text {
+        padding-left: 0px !important
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="darkblue">More About You</h1>
+        <p>Please answer the following questions. When you're finished, select CONTINUE.</p>
+        <p class="memo">* = required field</p>
+              
+        <div id="more_about_you" class="focus_effect module">
+        
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group form-group-lg no-pd left-buffer" style="margin-top: 10px">
+            <div class="floatlabel-wrapper" style="position:relative">
+              <span class="span-text">Are you a US citizen or US national? *</span>
+            </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 form-group form-group-lg no-pd border_bottom_zero">
+                <div class="radio">
+                  <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_yes" required="required" type="radio" value="yes" name="person_2">
+                  <label class="radio-label" for="radio_yes"><span>Yes</span></label>
+                </div>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 form-group form-group-lg no-pd">
+                <div class="radio">
+                  <input class="required floatlabel interaction-choice-control-value-radio-female" id="radio_no" required="required" type="radio" value="no" name="person_2">
+                  <label class="radio-label" for="radio_no"><span>No</span></label>
+                </div>
+              </div>
+          </div>
+
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group form-group-lg no-pd left-buffer" style="margin-top: 10px">
+            <div class="floatlabel-wrapper" style="position:relative">
+              <span class="span-text">Are you a naturalized citizen? *</span>
+            </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 form-group form-group-lg no-pd border_bottom_zero">
+                <div class="radio">
+                  <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_yes" required="required" type="radio" value="yes" name="person_3">
+                  <label class="radio-label" for="radio_yes"><span>Yes</span></label>
+                </div>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 form-group form-group-lg no-pd">
+                <div class="radio">
+                  <input class="required floatlabel interaction-choice-control-value-radio-female" id="radio_no" required="required" type="radio" value="no" name="person_3">
+                  <label class="radio-label" for="radio_no"><span>No</span></label>
+                </div>
+              </div>
+          </div>
+
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group form-group-lg no-pd left-buffer" style="margin-top: 10px">
+            <div class="floatlabel-wrapper" style="position:relative">
+              <span class="span-text">Are you a member of an American Indian or Alaskan Native tribe? *</span>
+            </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 form-group form-group-lg no-pd border_bottom_zero">
+                <div class="radio">
+                  <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_yes" required="required" type="radio" value="yes" name="person_4">
+                  <label class="radio-label" for="radio_yes"><span>Yes</span></label>
+                </div>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 form-group form-group-lg no-pd">
+                <div class="radio">
+                  <input class="required floatlabel interaction-choice-control-value-radio-female" id="radio_no" required="required" type="radio" value="no" name="person_4">
+                  <label class="radio-label" for="radio_no"><span>No</span></label>
+                </div>
+              </div>
+          </div>
+
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group form-group-lg no-pd left-buffer" style="margin-top: 10px">
+            <div class="floatlabel-wrapper" style="position:relative">
+              <span class="span-text">Are you currently incarcerated? *</span>
+            </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 form-group form-group-lg no-pd border_bottom_zero">
+                <div class="radio">
+                  <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_yes" required="required" type="radio" value="yes" name="person_5">
+                  <label class="radio-label" for="radio_yes"><span>Yes</span></label>
+                </div>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 form-group form-group-lg no-pd">
+                <div class="radio">
+                  <input class="required floatlabel interaction-choice-control-value-radio-female" id="radio_no" required="required" type="radio" value="no" name="person_5">
+                  <label class="radio-label" for="radio_no"><span>No</span></label>
+                </div>
+              </div>
+          </div>
+
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group form-group-lg no-pd left-buffer" style="margin-top: 10px">
+            <div class="floatlabel-wrapper" style="position:relative">
+              <span class="span-text">DO you have a disablitiy? *</span>
+            </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 form-group form-group-lg no-pd border_bottom_zero">
+                <div class="radio">
+                  <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_yes" required="required" type="radio" value="yes" name="person_6">
+                  <label class="radio-label" for="radio_yes"><span>Yes</span></label>
+                </div>
+              </div>
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 form-group form-group-lg no-pd">
+                <div class="radio">
+                  <input class="required floatlabel interaction-choice-control-value-radio-female" id="radio_no" required="required" type="radio" value="no" name="person_6">
+                  <label class="radio-label" for="radio_no"><span>No</span></label>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+              
+              
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.field_with_errors > *').unwrap();
+          Freebies.floatlabels();
+        });
+      </script>
+      
+      
+      <script>
+        $(document).on('ready page:load', function () {
+          Freebies.allFreebies();
+        });
+      </script>
+      <br>
+      <div id="person_search_results"></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
