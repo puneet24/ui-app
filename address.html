@@ -32,9 +32,10 @@
           <input type="hidden" name="person[dob_check]" id="person_dob_check">
         
           <div class="row row-form-wrapper no-buffer">
-            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 form-group form-group-lg no-pd border_bottom_zero" style="margin-top: 10px; margin-bottom: 10px">
+            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 form-group form-group-lg no-pd border_bottom_zero">
               <div class="floatlabel-wrapper" style="position:relative">
-                <span class="span-text">I am a DC resident who is homeless or have no permanent home address</b></span>
+                <p style="margin-top: 2px; margin-bottom: 2px; margin-left: 10px;font-size:12px"><b>Enter a home address.</b></p>
+                <span class="span-text"><b>NOTE:</b> if you receive mail at a different address, enter <i>both</i> a home and a mailing address.</span>
               </div>
 
             </div>
@@ -54,6 +55,21 @@
               <div class="floatlabel-wrapper" style="position:relative"><label for="person_city" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">CITY *</label><input class="required floatlabel form-control interaction-field-control-person-city" required="required" placeholder="CITY *" type="text" name="person[city]" id="person_city" style="transition: all 0.1s ease-in-out;"></div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 form-group form-group-lg no-pd">
+               <div class="selectric-labeled">
+                <span><strong>STATE *</strong></span>
+                <div class="selectric-wrapper selectric-interaction-choice-control-person-name-sfx">
+                  <div class="selectric-hide-select">
+                    <select name="person[name_sfx]" id="person_name_sfx" class="interaction-choice-control-person-name-sfx" tabindex="-1"><option value="" class="interaction-choice-control-person-name-sfx-0">Virginia</option>
+                      <option value="Jr." class="interaction-choice-control-person-name-sfx-1">Jr.</option>
+                      <option value="Sr." class="interaction-choice-control-person-name-sfx-2">Sr.</option>
+                      <option value="II" class="interaction-choice-control-person-name-sfx-3">II</option>
+                      <option value="III" class="interaction-choice-control-person-name-sfx-4">III</option>
+                      <option value="IV" class="interaction-choice-control-person-name-sfx-5">IV</option>
+                      <option value="V" class="interaction-choice-control-person-name-sfx-6">V</option>
+                    </select>
+                  </div>
+              </div>    
+            </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 form-group form-group-lg no-pd">
               <div class="floatlabel-wrapper" style="position:relative"><label for="person_zip" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">ZIP *</label><input class="floatlabel form-control interaction-field-control-person-zip" placeholder="ZIP *" type="text" name="person[zip]" id="person_zip" style="transition: all 0.1s ease-in-out;"></div>
