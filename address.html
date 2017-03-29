@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Enroll App</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="darkblue">Address</h1>
+        <p>Please enter the following info. When you've finished, select CONTINUE.</p>
+        <p class="memo">* = required field</p>
+              
+        <div id="personal_info" class="focus_effect module">
+          <input type="hidden" name="people[id]" id="people_id">
+          <input type="hidden" name="person[dob_check]" id="person_dob_check">
+        
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 form-group form-group-lg no-pd border_bottom_zero" style="margin-top: 10px; margin-bottom: 10px">
+              <div class="floatlabel-wrapper" style="position:relative">
+                <span class="span-text">I am a DC resident who is homeless or have no permanent home address</b></span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_first_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">HOME ADDRESS LINE 1 *</label><input class="required floatlabel form-control interaction-field-control-person-address-1" required="required" placeholder="HOME ADDRESS LINE 1 *" type="text" name="person[address1]" id="person_address1" style="transition: all 0.1s ease-in-out;"></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_middle_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">HOME ADDRESS LINE 2</label><input class="floatlabel form-control interaction-field-control-person-address2" placeholder="HOME ADDRESS LINE 2" type="text" name="person[address2]" id="person_address2" style="transition: all 0.1s ease-in-out;"></div>
+            </div>
+        </div>
+
+        <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_city" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">CITY *</label><input class="required floatlabel form-control interaction-field-control-person-city" required="required" placeholder="CITY *" type="text" name="person[city]" id="person_city" style="transition: all 0.1s ease-in-out;"></div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 form-group form-group-lg no-pd">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_zip" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">ZIP *</label><input class="floatlabel form-control interaction-field-control-person-zip" placeholder="ZIP *" type="text" name="person[zip]" id="person_zip" style="transition: all 0.1s ease-in-out;"></div>
+            </div>
+        </div>
+
+        <div class="row row-form-wrapper no-buffer">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-group form-group-lg no-pd" style="margin-top: 10px">
+          <div class="floatlabel-wrapper" style="position:relative">
+            <span class="span-text">Are you <b>temporarily</b> outside DC and <b>intend to return? *</b></span>
+          </div>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 form-group form-group-lg no-pd border_bottom_zero">
+              <div class="radio">
+                <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_male" required="required" type="radio" value="male" name="person[gender]">
+                <label class="radio-label" for="radio_male"><span>Yes</span></label>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6 form-group form-group-lg no-pd">
+              <div class="radio">
+                <input class="required floatlabel interaction-choice-control-value-radio-female" id="radio_female" required="required" type="radio" value="female" name="person[gender]">
+                <label class="radio-label" for="radio_female"><span>No</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 form-group form-group-lg no-pd" style="margin-top: 10px; margin-bottom: 10px; padding-left:5px">
+            <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_" required="required" type="checkbox" value="1" name="person[]">
+            </div>
+
+            <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 form-group form-group-lg no-pd border_bottom_zero" style="margin-top: 10px; margin-bottom: 10px">
+              <div class="floatlabel-wrapper" style="position:relative">
+                <span class="span-text">I am a DC resident who is homeless or have no permanent home address</b></span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+              
+              
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.field_with_errors > *').unwrap();
+          Freebies.floatlabels();
+        });
+      </script>
+      
+      
+      <script>
+        $(document).on('ready page:load', function () {
+          Freebies.allFreebies();
+        });
+      </script>
+      <br>
+      <div id="person_search_results"></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
