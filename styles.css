@@ -37,3 +37,15 @@ input::-webkit-input-placeholder {
 .left-buffer {
 	margin-left: 10px !important;
 }
+
+.med-buffer {
+    margin-bottom: 5px;
+}
+
+.med-left-buffer {
+    margin-left: 20px;
+}
+
+.med-top-buffer {
+    margin-top: 10px;
+}
