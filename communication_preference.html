@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Enroll App</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="darkblue">Communication Preferences</h1>
+        <p>Please enter the following info. When you've finished, select CONTINUE.</p>
+        <p class="memo">* = required field</p>
+              
+        <div id="sec1" class="focus_effect module">
+        
+
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_first_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">HOME PHONE</label><input class="required floatlabel form-control interaction-field-control-person-address-1" required="required" placeholder="HOME PHONE" type="text" name="person[home_phone]" id="home_phone" style="transition: all 0.1s ease-in-out;"></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_mobile_phone" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">MOBILE PHONE</label><input class="floatlabel form-control interaction-field-control-person-address2" placeholder="MOBILE PHONE" type="text" name="person[mobile_phone]" id="person_mobile_phone" style="transition: all 0.1s ease-in-out;"></div>
+            </div>
+          </div>
+
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_first_name" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">HOME EMAIL</label><input class="required floatlabel form-control interaction-field-control-person-address-1" required="required" placeholder="HOME EMAIL" type="text" name="person[home_email]" id="home_email" style="transition: all 0.1s ease-in-out;"></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-group form-group-lg no-pd">
+              <div class="floatlabel-wrapper" style="position:relative"><label for="person_work_email" class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">WORK EMAIL</label><input class="floatlabel form-control interaction-field-control-person-address2" placeholder="WORK EMAIL" type="text" name="person[work_email]" id="person_mobile_phone" style="transition: all 0.1s ease-in-out;"></div>
+            </div>
+          </div>
+      </div>
+
+      <div id="sec1" class="focus_effect module" style="margin-top:10px;">
+        
+
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group form-group-lg no-pd left-buffer" style="margin-top: 10px;margin-bottom: 10px">
+            <div class="floatlabel-wrapper" style="position:relative">
+              <span class="span-text">Tell us about <b>how you prefer</b> to receive notices and other communication</span>
+            </div>
+            </div>
+          </div>
+
+         <div class="row row-form-wrapper no-buffer">
+           <div class="col-md-1 col-lg-1 col-xs-1 col-sm-1"></div>
+           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd border_bottom_zero">
+              <div class="radio">
+                <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_yes" required="required" type="radio" value="yes" name="person_4">
+                  <label class="radio-label" for="radio_yes"><span>By mail only</span></label>
+              </div>
+            </div>
+            <div class="col-md-1 col-lg-1 col-xs-1 col-sm-1"></div>
+           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd border_bottom_zero">
+              <div class="radio">
+                <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_yes" required="required" type="radio" value="yes" name="person_4">
+                  <label class="radio-label" for="radio_yes"><span>By email only</span></label>
+              </div>
+            </div>
+            <div class="col-md-1 col-lg-1 col-xs-1 col-sm-1"></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 form-group form-group-lg no-pd border_bottom_zero">
+              <div class="radio">
+                <input class="required floatlabel interaction-choice-control-value-radio-male" id="radio_yes" required="required" type="radio" value="yes" name="person_4">
+                  <label class="radio-label" for="radio_yes"><span>Both mail and email</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-form-wrapper no-buffer">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group form-group-lg no-pd">
+               <div class="selectric-labeled" style="margin-left: 20px;">
+                <span><strong>MY PREFERRED LANGUAGE IS</strong></span>
+                <div class="selectric-wrapper selectric-interaction-choice-control-person-name-sfx">
+                  <div class="selectric-hide-select">
+                    <select name="person[name_sfx]" id="person_name_sfx" class="interaction-choice-control-person-name-sfx" tabindex="-1"><option value="" class="interaction-choice-control-person-name-sfx-0">Virginia</option>
+                      <option value="Jr." class="interaction-choice-control-person-name-sfx-1">Jr.</option>
+                      <option value="Sr." class="interaction-choice-control-person-name-sfx-2">Sr.</option>
+                      <option value="II" class="interaction-choice-control-person-name-sfx-3">II</option>
+                      <option value="III" class="interaction-choice-control-person-name-sfx-4">III</option>
+                      <option value="IV" class="interaction-choice-control-person-name-sfx-5">IV</option>
+                      <option value="V" class="interaction-choice-control-person-name-sfx-6">V</option>
+                    </select>
+                  </div>
+              </div>    
+            </div>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+              
+              
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.field_with_errors > *').unwrap();
+          Freebies.floatlabels();
+        });
+      </script>
+      
+      
+      <script>
+        $(document).on('ready page:load', function () {
+          Freebies.allFreebies();
+        });
+      </script>
+      <br>
+      <div id="person_search_results"></div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
